@@ -8,19 +8,14 @@ self.addEventListener('install', event => {
 			return cache.addAll([
 				'./',
 				'index.html',
-				'message.html',
 				'css/common.css',
-				'css/index.css',
-				'css/message.css',
+				'css/message.css', // Remove index.css if you aren't using it in this file
 				'fonts/Montserrat-Regular.ttf',
 				'images/bg.png',
 				'images/bg-mobile.png',
 				'images/down-arrow.png',
-				'js/index.js',
 				'js/message.js',
-				'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
-				'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js',
-				'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js',
+				// ... other external links
 			]);
 		})
 	);
